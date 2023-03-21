@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store.Seller_pgController">
+   <children>
+      <AnchorPane prefHeight="132.0" prefWidth="598.0">
+         <children>
+            <AnchorPane layoutY="-1.0" prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: #1abc9c;">
+               <children>
+                  <Label layoutX="40.0" layoutY="19.0" text="Home" textFill="#f8f8ec">
+                     <font>
+                        <Font name="Arial" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="483.0" layoutY="18.0" mnemonicParsing="false" onAction="#quitbtn" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #1abc9c;" text="Quit" textFill="#f8f8ec">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="8.0" layoutY="66.0" prefHeight="52.0" prefWidth="583.0" style="-fx-background-color: #f6e58d;">
+               <children>
+                  <Label ellipsisString="" layoutX="27.0" layoutY="11.0" prefHeight="30.0" prefWidth="159.0" text="SELLER UPLOAD" textFill="#14866f">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="26.0" layoutY="124.0" prefHeight="245.0" prefWidth="211.0">
+         <children>
+            <Label layoutX="36.0" layoutY="14.0" text="Name of product " textFill="#136f5c">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="2.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="8.0" />
+               </padding>
+            </Label>
+            <Label layoutX="35.0" layoutY="59.0" text="Category" textFill="#136f5c">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="2.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="8.0" />
+               </padding>
+            </Label>
+            <Label layoutX="35.0" layoutY="101.0" text="Price" textFill="#136f5c">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="2.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="8.0" />
+               </padding>
+            </Label>
+            <Label layoutX="34.0" layoutY="137.0" prefHeight="28.0" prefWidth="119.0" text="Quantity Type" textFill="#136f5c">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="2.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="8.0" />
+               </padding>
+            </Label>
+            <Label layoutX="38.0" layoutY="175.0" prefHeight="26.0" prefWidth="85.0" text="Quantity" textFill="#136f5c">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="206.0" layoutY="124.0" prefHeight="235.0" prefWidth="287.0">
+         <children>
+            <TextField fx:id="tfPname" layoutX="25.0" layoutY="14.0" prefWidth="250.0" />
+            <TextField fx:id="tfPrice" layoutX="25.0" layoutY="95.0" prefWidth="250.0" />
+            <TextField fx:id="tfqty" layoutX="25.0" layoutY="189.0" prefHeight="25.0" prefWidth="250.0" />
+            <ChoiceBox fx:id="tfcat" layoutX="25.0" layoutY="55.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" />
+            <ChoiceBox fx:id="tfqtytype" layoutX="25.0" layoutY="140.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnSbmt" layoutX="217.0" layoutY="354.0" mnemonicParsing="false" onAction="#submit" prefHeight="31.0" prefWidth="102.0" text="Submit" />
+   </children>
+</AnchorPane>
